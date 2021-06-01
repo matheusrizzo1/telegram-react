@@ -5,7 +5,7 @@
  * LICENSE file in the root directory of this source tree.
  */
 
-.inputbox-background {
+ .inputbox-background {
 }
 
 .inputbox {
@@ -21,7 +21,7 @@
     /*border-color: var(--border);*/
     padding: 0 0 25px;
     width: calc(100% - 22px);
-    max-width: 695px;
+    /* max-width: 695px; */
     margin: 0 auto;
     position: relative;
     z-index: 1;

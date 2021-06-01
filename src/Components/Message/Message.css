@@ -5,7 +5,7 @@
  * LICENSE file in the root directory of this source tree.
  */
 
-a {
+ a {
     text-decoration: none;
     cursor: pointer;
 }
@@ -117,7 +117,7 @@ pre code {
 }
 
 .message-wrapper {
-    max-width: 766px;
+    /* max-width: 766px; */
     padding: 5px 6px;
     margin: 0 auto;
     display: flex;

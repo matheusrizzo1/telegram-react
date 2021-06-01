@@ -1411,6 +1411,19 @@ function getSupergroupId(chatId) {
     return 0;
 }
 
+function getChannelId(chatId) {
+    const chat = ChatStore.get(chatId);
+    if (!chat) return false;
+
+    const { type } = chat;
+
+    if (type && type['@type'] === 'chatTypeSupergroup' && chat.type.is_channel) {
+        return type.channel_id;
+    }
+
+    return 0;
+}
+
 function hasSupergroupId(chatId, supergroupId) {
     const chat = ChatStore.get(chatId);
     if (!chat) return false;
@@ -2040,6 +2053,7 @@ export {
     isPrivateChat,
     isGroupChat,
     isChannelChat,
+    getChannelId,
     isChatUnread,
     isChatMember,
     isChatVerified,
